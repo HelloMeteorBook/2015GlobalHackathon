@@ -21,3 +21,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 ian:accounts-ui-bootstrap-3
 reywood:bootstrap3-sass
 fortawesome:fontawesome
+iron:router
