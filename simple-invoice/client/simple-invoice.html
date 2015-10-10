@@ -11,7 +11,7 @@
 
 <template name="create">
   <h1>Create an Invoice</h1>
-  <form id="invoice-create">
+  <form id="invoice-create" class="form-horizontal">
     <div class="form-group">
       <label for="company-name">Company Name</label>
       <input type="text" class="form-control" name="company-name" placeholder="Please enter your company name" required>
@@ -24,7 +24,31 @@
       <label for="project-description">Project Description</label>
       <textarea class="form-control" name="project-description" placeholder="A description of the project" required></textarea>
     </div>
+    <div class="form-group">
+      <label>Line Item</label>
+      {{>lineItem}}
+    </div>
   </form>
+</template>
+
+<template name="lineItem">
+  <div class='row'>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name='item-description' placeholder="Description">
+      <div class="help-block">Item Description</div>
+    </div>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" name='item-quantity' placeholder="0">
+      <div class="help-block">Quantity</div>
+    </div>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" name='item-price' placeholder="10">
+      <div class="help-block">Price per item</div>
+    </div>
+    <div class="col-sm-2">
+      <p class="form-control-static">{{lineItemPrice}}</p>
+    </div>  
+  </div>
 </template>
 
 <template name="invoice">
