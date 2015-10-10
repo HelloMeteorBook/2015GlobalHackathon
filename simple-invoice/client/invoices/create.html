@@ -14,6 +14,17 @@
       <textarea class="form-control" name="project-description" placeholder="A description of the project" required></textarea>
     </div>
     <div class="form-group">
+      <label for="due-date">Due Date</label>
+      <div class="input-group date date-picker">
+        <input type="text" class="form-control" name="due-date">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="project-description">Project Description</label>
+      <textarea class="form-control" name="project-description" placeholder="A description of the project" required></textarea>
+    </div>
+    <div class="form-group">
       <label>Line Item</label>
       {{#each lineItems}}
         {{> lineItem}}
