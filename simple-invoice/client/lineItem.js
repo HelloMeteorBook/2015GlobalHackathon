@@ -36,5 +36,8 @@ Template.lineItem.events({
       template.newFieldCreated.set(true);
       LineItems.insert({});
     }
+  },
+  "click .remove-line-item":function(event, template) {
+    LineItems.remove(this._id);
   }
 }); 
