@@ -3,7 +3,7 @@ Router.configure({
 });
 
 Router.route('/', {
-    name: 'create'
+    name: 'createAndView'
 });
 
 Router.route('/about');
