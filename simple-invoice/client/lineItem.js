@@ -4,7 +4,7 @@ Template.lineItem.onCreated(function() {
 
 Template.lineItem.helpers({ 
   lineItemPrice:function() {
-    debugger;
+    return 10;
   }
 }); 
 

@@ -15,7 +15,9 @@
     </div>
     <div class="form-group">
       <label>Line Item</label>
-      {{>lineItem}}
+      {{#each lineItems}}
+        {{> lineItem}}
+      {{/each}}
     </div>
   </form>
 </template>
