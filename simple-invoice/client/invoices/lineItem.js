@@ -10,16 +10,14 @@ Template.lineItem.helpers({
     var display;
     var totalPrice = Template.instance().price.get() * Template.instance().quantity.get()
     if(totalPrice > 0) {
-      display = '$' + totalPrice;
+      display = accounting.formatMoney(totalPrice);
     } else {
-      display = '$0'
+      display = accounting.formatMoney(0)
     }
     return display;
   },
   moreThanOneLineItem:function() {
-    return LineItems.find({}).count() > 1 && (_.isEmpty(_.filter(Template.instance().findAll($('input')), function(field) {
-      return !field.value;
-    })));
+    return this.quantity && this.price && this.description && LineItems.find({}).count() > 1;
   }
 }); 
 

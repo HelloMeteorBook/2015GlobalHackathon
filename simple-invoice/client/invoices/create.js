@@ -31,7 +31,7 @@ Template.create.helpers({
       if(doc.price && doc.quantity)
         total += doc.price * doc.quantity;
     });
-    return total;
+    return accounting.formatMoney(total);
   }
 });
 
