@@ -22,44 +22,40 @@
 </template>
 
 <template name="create">
+  <h1>Create an Invoice</h1>
   <form id="invoice-create">
-    
+    <div class="form-group">
+      <label for="company-name">Company Name</label>
+      <input type="text" class="form-control" name="company-name" placeholder="Provide a short distinct title" required>
+    </div>  
   </form>
 </template>
 
 <template name="invoice">
-  <div class="invoice-background">
-    <div class="container">
-      <div class="invoice-body">
-        <h1>Invoice #</h1>
-        <div class="company">Your Company</div>
-        <div class="company">To: Client Name</div>
-        <div class="company">For: Project Description</div>
-        <br>
-        <div class="company">Description</div>
-      </div>
-    </div>
+  <div class="invoice-body">
+    <h1>Invoice #</h1>
+    <div class="company">Your Company</div>
+    <div class="company">To: Client Name</div>
+    <div class="company">For: Project Description</div>
+    <br>
+    <div class="company">Description</div>
   </div>
 </template>
 
 <template name="about">
-  <div class="invoice-background">
-    <div class="container">
-      <div class="invoice-body">
-        <p>SimpleInvoice.co is an easy way to invoice clients with your Stripe account. There are no up-front fees. If you successfully bill a client we charge $1 plus Stripe’s additional <a href="https://stripe.com/us/pricing" target="_blank">transaction fee</a>.</p>
+  <div class="invoice-body">
+    <p>SimpleInvoice.co is an easy way to invoice clients with your Stripe account. There are no up-front fees. If you successfully bill a client we charge $1 plus Stripe’s additional <a href="https://stripe.com/us/pricing" target="_blank">transaction fee</a>.</p>
 
-        <ul>Features:
-          <li>Simple invoicing with Stripe</li>
-          <li>Bill clients via a professional, customized email (example)</li>
-          <li>Get notified when your client pays</li>
-        </ul>
+    <ul>Features:
+      <li>Simple invoicing with Stripe</li>
+      <li>Bill clients via a professional, customized email (example)</li>
+      <li>Get notified when your client pays</li>
+    </ul>
 
-        <p>Note:</p>
-        <p>SimpleInvoice.co was built during Meteor’s Global Distributed Hackathon [http://meteor-2015.devpost.com/] by the team at HelloMeteor.com, a Meteor web consultancy.</p>
+    <p>Note:</p>
+    <p>SimpleInvoice.co was built during Meteor’s Global Distributed Hackathon [http://meteor-2015.devpost.com/] by the team at HelloMeteor.com, a Meteor web consultancy.</p>
 
-        <p>Want to get in touch? Contact us at <a href="mailto:hello@hellometeor.com">hello@hellometeor.com</a>.</p>
-      </div>
-    </div>
+    <p>Want to get in touch? Contact us at <a href="mailto:hello@hellometeor.com">hello@hellometeor.com</a>.</p>
   </div>
 </template>
 
@@ -69,10 +65,8 @@
 
 <template name="notFound">
   <div class="not-found">
-    <div class="container">
-      <img src="https://s3.amazonaws.com/simplesignup.io/confused_mark_whalberg.gif" />
-      <h1 class="not-found-text">Oops! That page doesn't exit!</h1>
-      <h3 class="not-found-text">Not to worry. You can just head back to <a href="{{pathFor 'home'}}">our home page</a>.</h3>
-    </div>
+    <img src="https://s3.amazonaws.com/simplesignup.io/confused_mark_whalberg.gif" />
+    <h1 class="not-found-text">Oops! That page doesn't exit!</h1>
+    <h3 class="not-found-text">Not to worry. You can just head back to <a href="{{pathFor 'home'}}">our home page</a>.</h3>
   </div>
 </template>
