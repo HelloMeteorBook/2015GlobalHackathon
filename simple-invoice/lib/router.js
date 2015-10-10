@@ -5,7 +5,9 @@ Router.configure({
 });
 
 Router.route('/', {
-    name: 'createAndView'
+  name: 'createAndView'
 });
 
-Router.route('/about');
+Router.route('/about', {
+  name: 'about'
+});
