@@ -1,13 +1,21 @@
 @import '{reywood:bootstrap3-sass}/bootstrap';
 
+/* VARIABLES */
+$fontStack: "Museo Sans", sans-serif;
+$primaryColor: #43464c;
+$colorBlue: #389BFF;
+$colorRed: #de4f4f;
+$colorWhite: #fff;
+
+
 body {
-  color: #464c3e;
-  font-family: "Museo Sans", sans-serif;
+  color: $primaryColor;
+  font-family: $fontStack;
   font-size: 18px;
 }
 
 a, a:hover {
-  color: #389BFF;
+  color: $colorBlue;
 }
 
 /* NAVBAR */
@@ -30,7 +38,7 @@ a, a:hover {
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #389BFF;
+  color: $colorBlue;
 }
 
 .navbar-header {
@@ -43,13 +51,40 @@ a, a:hover {
 
 /* End NAVBAR */
 
+/* FOOTER */
+footer {
+  position: absolute;
+  text-align: center;
+  background-color: $primaryColor;
+  color: $colorWhite;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+
+  p {
+    margin: 20px 0;
+    color: $primaryColor;
+  }
+
+  a.footer {
+    margin-right: 15px;
+    text-decoration: none;
+    color: $colorWhite;
+  }
+
+  a.footer:hover {
+    text-decoration: underline;
+    color: $colorRed;
+  }
+}
+/* End FOOTER */
 
 .fa {
-  color: #fff;
+  color: $colorWhite;
 }
 
 .fa:hover {
-  color: #389BFF;
+  color: $colorBlue;
 }
 
 .invoice-background {
@@ -57,7 +92,7 @@ a, a:hover {
 }
 
 .invoice-body {
-  background-color: #fff;
+  background-color: $colorWhite;
   margin: 40px auto 60px auto;
   padding: 15px;
   border-radius: 10px;
