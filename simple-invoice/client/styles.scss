@@ -2,11 +2,11 @@
 
 /* VARIABLES */
 $fontStack: "gibson", sans-serif;
-$primaryColor: #43464c;
+$primaryColor: #7d878a;
 $colorBlue: #389BFF;
 $colorRed: #de4f4f;
 $colorWhite: #fff;
-$colorLightGray: #F2F2F2;
+$colorLightGray: #DFE1E3;
 
 body {
   color: $primaryColor;
@@ -66,15 +66,19 @@ footer {
   }
 
   a.footer {
+    color: $primaryColor;
+    font-weight: 300;
     margin-right: 15px;
     text-decoration: none;
-    color: $colorWhite;
   }
 
   a.footer:hover {
     text-decoration: underline;
-    color: $colorRed;
   }
+}
+
+span.red {
+  color: $colorRed;
 }
 /* End FOOTER */
 
