@@ -7,6 +7,16 @@ Template.invoice.helpers({
   }, 
   projectDescription: function(){ 
    return Session.get('form_project-description') || 'Project Description'
+  },
+  dueDate: function() {
+    if(Session.get('form_due-date')) {
+      return moment(Session.get('form_due-date')).format('MM/DD/YYYY');
+    } else {
+      return 'Due Date'
+    }
+  },
+  clientEmail: function() {
+    return Session.get('form_client-email') || 'Client Email';
   }
 }); 
 

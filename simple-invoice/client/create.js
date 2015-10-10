@@ -18,7 +18,10 @@ Template.create.helpers({
 }); 
 
 Template.create.events({ 
-  "keyup input, keyup textarea": function(event, template){ 
+  "keyup input, keyup textarea": function(event, template) {
      Session.set('form_' + event.target.name, event.target.value);
-  } 
+  },
+  "changeDate .date-picker": function(event, template) {
+    Session.set('form_due-date', event.date);
+  }
 }); 
