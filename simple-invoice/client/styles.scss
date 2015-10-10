@@ -1,7 +1,7 @@
 @import '{reywood:bootstrap3-sass}/bootstrap';
 
 /* VARIABLES */
-$fontStack: "Museo Sans", sans-serif;
+$fontStack: "gibson", sans-serif;
 $primaryColor: #43464c;
 $colorBlue: #389BFF;
 $colorRed: #de4f4f;
@@ -55,8 +55,7 @@ a, a:hover {
 footer {
   position: absolute;
   text-align: center;
-  background-color: $primaryColor;
-  color: $colorWhite;
+  border-top: 1px solid $colorLightGray;
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -78,6 +77,10 @@ footer {
   }
 }
 /* End FOOTER */
+
+label {
+  font-weight: 400;
+}
 
 .fa {
   color: $colorWhite;
