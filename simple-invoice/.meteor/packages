@@ -18,6 +18,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 insecure                # Allow all DB writes from clients (for prototyping)
 fortawesome:fontawesome
-twbs:bootstrap
 iron:router
+fourseven:scss
 reywood:bootstrap3-sass
