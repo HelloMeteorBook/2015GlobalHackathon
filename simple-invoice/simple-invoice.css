@@ -1,1 +1,52 @@
-/* CSS declarations go here */
+body {
+  font-family: "Museo Sans", sans-serif;
+  color: #464c3e;
+}
+
+.navbar-max-width {
+  max-width: 750px;
+}
+
+.navbar-brand {
+  font-size: 3em;
+  /*font-family: "mauritius";*/
+  font-family: "paganini-open", serif;
+}
+
+.navbar-default {
+  min-height: 80px;
+  background-color: #31E14E;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-header {
+  margin-top: 15px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-right {
+  margin-top: 10px;
+}
+
+.fa {
+  color: #292B33;
+}
+
+.invoice-background {
+  background-color: #F2F2F2;
+}
+
+.invoice-body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  max-width: 720px;
+}
