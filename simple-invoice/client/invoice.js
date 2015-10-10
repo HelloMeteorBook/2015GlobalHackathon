@@ -3,16 +3,13 @@ Template.invoice.helpers({
   companyName: function(){ 
      return Session.get('form_company-name') || 'Your Company'
   }, 
-  rendered: function(){ 
-     
+  clientName: function(){ 
+     return Session.get('form_client-name') || 'Client Name'
   }, 
-  destroyed: function(){ 
-     
+  projectDescription: function(){ 
+     return Session.get('form_project-description') || 'Project Description'
   }, 
 }); 
 
 Template.invoice.events({ 
-  "click #foo": function(event, template){ 
-     
-  } 
 }); 
