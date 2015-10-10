@@ -26,6 +26,7 @@ ecmascript-collections@0.1.6
 ejson@1.0.7
 es5-shim@4.1.13
 fastclick@1.0.7
+fourseven:scss@3.3.3_3
 geojson-utils@1.0.4
 hot-code-push@1.0.0
 html-tools@1.0.5
@@ -57,6 +58,7 @@ reactive-dict@1.1.2
 reactive-var@1.0.6
 reload@1.1.4
 retry@1.0.4
+reywood:bootstrap3-sass@3.3.5_2
 routepolicy@1.0.6
 service-configuration@1.0.5
 session@1.1.1
