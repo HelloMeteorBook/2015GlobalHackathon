@@ -111,17 +111,32 @@ p.italic {
 }
 
 .create-invoice-div {
-  margin-right: 1px solid red;
+  padding: 0px 30px 15px 0px;
+  margin: 40px auto 60px auto;
+}
+
+.create-invoice-view {
+  margin-right: 30px;
 }
 
 .view-invoice-div {
+  padding-left: 30px;
+  margin: 40px auto 60px auto;
+  border-left: 1px solid $colorLightGray;
+  min-height: 1000px;
+}
 
+.view-invoice {
+  border: 2px solid $colorLightGray;
+  border-radius: 10px;
+  padding: 0px 15px 15px 15px;
+  margin-top: 30px;
+  margin-right: -30px;
 }
 
 .invoice-body {
   background-color: $colorWhite;
-  margin: 40px auto 60px auto;
-  padding: 15px;
+
   border-radius: 10px;
 }
 

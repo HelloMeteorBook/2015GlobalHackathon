@@ -1,10 +1,14 @@
 <template name="createAndView">
   <div class="row">
     <div class="create-invoice-div col-md-6">
-      {{> create}}
+      <div class="create-invoice-view">
+        {{> create}}
+      </div>
     </div>
     <div class="view-invoice-div col-md-6">
-      {{> invoice}}
+      <div class="view-invoice">
+        {{> invoice}}
+      </div>
     </div>
   </div>
 </template>
