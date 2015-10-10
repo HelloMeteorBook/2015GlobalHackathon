@@ -114,13 +114,14 @@ label {
 
 .create-invoice-view {
   margin-right: 30px;
+  min-height: 700px;
 }
 
 .view-invoice-div {
   padding-left: 30px;
   margin: 40px auto 60px auto;
   border-left: 1px solid $colorLightGray;
-  min-height: 1000px;
+  min-height: 700px;
 }
 
 .view-invoice {
@@ -199,8 +200,12 @@ ul.about {
 
 .remove-line-item {
   position: absolute;
-  color: red;
+  color: $colorRed;
   cursor: pointer;
+}
+
+.has-error .help-block {
+  color: $colorRed;
 }
 
 @font-face {
