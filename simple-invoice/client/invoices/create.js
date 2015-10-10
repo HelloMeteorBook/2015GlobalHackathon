@@ -24,8 +24,16 @@ Template.create.onRendered(function() {
 Template.create.helpers({ 
   lineItems: function() {
     return LineItems.find({});
+  },
+  totalPrice: function() {
+    var total = 0;
+    LineItems.find({}).map(function(doc) {
+      if(doc.price && doc.quantity)
+        total += doc.price * doc.quantity;
+    });
+    return total;
   }
-}); 
+});
 
 Template.create.events({ 
   "keyup input, keyup textarea": function(event, template) {
