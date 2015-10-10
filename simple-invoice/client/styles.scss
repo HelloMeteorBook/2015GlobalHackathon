@@ -3,8 +3,9 @@
 /* VARIABLES */
 $fontStack: "gibson", sans-serif;
 $primaryColor: #7d878a;
+$colorBlack: #3c4043;
 $colorGreen: #3FB23F;
-$colorBlue: #6CA5C6;
+$colorBlue: #5ba4e5;
 $colorRed: #de4f4f;
 $colorWhite: #fff;
 $colorLightGray: #DFE1E3;
@@ -82,6 +83,10 @@ span.red {
   color: $colorRed;
   font-weight: 600;
 }
+
+span.bold {
+  font-weight: 600;
+}
 /* End FOOTER */
 
 label {
@@ -101,6 +106,10 @@ label {
 
 }
 
+p.italic {
+  font-style: italic;
+}
+
 .create-invoice-div {
   margin-right: 1px solid red;
 }
@@ -114,6 +123,14 @@ label {
   margin: 40px auto 60px auto;
   padding: 15px;
   border-radius: 10px;
+}
+
+.about-body {
+  color: $colorBlack;
+  margin: 40px 0px 60px 0px;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 720px;
 }
 
 /* 404 PAGE */
