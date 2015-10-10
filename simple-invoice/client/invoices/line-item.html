@@ -1,7 +1,4 @@
 <template name="lineItem">
-  {{#if moreThanOneLineItem}}
-    <div class='remove-line-item'>SOME ELEMENT TO REMOVE A LINE ITEM</div>
-  {{/if}}
   <div class='row'>
     <div class="col-sm-6">
       <input type="text" class="form-control" name='item-description' placeholder="Description">
@@ -18,5 +15,8 @@
     <div class="col-sm-2">
       <p class="form-control-static">{{lineItemPrice}}</p>
     </div>
+    {{#if moreThanOneLineItem}}
+      <span class='remove-line-item form-control-static'>X</span>
+    {{/if}}
   </div>
 </template>

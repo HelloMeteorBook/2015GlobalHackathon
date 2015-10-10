@@ -156,3 +156,9 @@ p.italic {
 .help-block {
   font-size: .75em;
 }
+
+.remove-line-item {
+  position: absolute;
+  color: red;
+  cursor: pointer;
+}
