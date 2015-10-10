@@ -17,6 +17,12 @@ Template.invoice.helpers({
   },
   clientEmail: function() {
     return Session.get('form_client-email') || 'Client Email';
+  },
+  invoiceNumber: function() {
+    return Session.get('form_invoice-number') || '';
+  },
+  lineItems: function() {
+    return LineItems.find({});
   }
 }); 
 
