@@ -37,7 +37,12 @@
       {{#each lineItems}}
         {{> lineItem}}
       {{/each}}
-      <p class="form-control-static total-cost">{{totalPrice}}</p>
+      <div class="row">
+        <label for="total-price" class="control-label col-md-offset-6 col-sm-4">Total Price</label>
+        <div class="col-sm-2">
+          <p class="form-control-static total-cost">{{totalPrice}}</p>
+        </div>
+      </div>
     </div>
     <button type="submit" class="btn btn-success pay-button">Connect to Stripe &amp; Send</button>
   </form>
