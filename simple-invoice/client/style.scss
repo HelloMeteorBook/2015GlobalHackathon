@@ -148,6 +148,16 @@ label {
   margin-top: 10px;
 }
 
+.invoice-pay-button {
+  margin-top: 60px;
+}
+
+.pay-button {
+  font-size: 2em;
+  font-family: "Concourse_C4", sans-serif;
+  padding: 15px;
+}
+
 .view-invoice-div {
   padding-left: 60px;
   margin: 40px auto 60px auto;
@@ -284,6 +294,13 @@ ul.about {
 @font-face {
   font-family: 'Concourse_C3';
   src: url('fonts/concourse_c3_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_C4';
+  src: url('fonts/concourse_c4_regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
