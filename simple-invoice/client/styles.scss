@@ -91,7 +91,8 @@ span.bold {
 /* End FOOTER */
 
 label {
-  font-weight: 400;
+  font-weight: 600;
+  color: $colorBlack;
 }
 
 .fa {
@@ -107,6 +108,22 @@ label {
 
 }
 
+::-webkit-input-placeholder {
+  font-family: "Concourse_T2", sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: "Concourse_T2", sans-serif;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-family: "Concourse_T2", sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: "Concourse_T2", sans-serif;
+}
+
 .create-invoice-div {
   padding: 0px 30px 15px 0px;
   margin: 40px auto 60px auto;
@@ -115,6 +132,7 @@ label {
 .create-invoice-view {
   margin-right: 30px;
   min-height: 700px;
+  margin-top: 30px;
 }
 
 .view-invoice-div {
