@@ -11,3 +11,11 @@ Router.route('/', {
 Router.route('/about', {
   name: 'about'
 });
+
+Router.route(':id/success', {
+  name: 'success'
+})
+
+Router.route(':id/pay', {
+  name: 'pay'
+})
