@@ -1,14 +1,11 @@
 Template.lineItem.onCreated(function() {
-  // create line item price and quantity
-  this.price = new ReactiveVar(0);
-  this.quantity = new ReactiveVar(0);
   this.newFieldCreated = new ReactiveVar(false);
 });
 
 Template.lineItem.helpers({ 
   lineItemPrice:function() {
     var display;
-    var totalPrice = Template.instance().price.get() * Template.instance().quantity.get()
+    var totalPrice = this.price * this.quantity;
     if(totalPrice > 0) {
       display = accounting.formatMoney(totalPrice);
     } else {
@@ -24,20 +21,16 @@ Template.lineItem.helpers({
 Template.lineItem.events({ 
   // some event that adds the line item to a client side line item collection
   "keyup [name=item-price]": function(event, template){ 
-    template.price.set(event.target.value);
     LineItems.update(this._id, {$set: {price: event.target.value}});
   },
   "keyup [name=item-quantity]": function(event, template){ 
-    template.quantity.set(event.target.value);
     LineItems.update(this._id, {$set: {quantity: event.target.value}});
   },
   "keyup [name=item-description]": function(event, template) {
     LineItems.update(this._id, {$set: {description: event.target.value}});
   },
   "keyup input": function(event, template) {
-    if(!template.newFieldCreated.get() && _.isEmpty(_.filter(template.findAll($('input')), function(field) {
-      return !field.value;
-    }))) {
+    if(!template.newFieldCreated.get() && this.quantity && this.price && this.description) {
       template.newFieldCreated.set(true);
       LineItems.insert({});
     }
