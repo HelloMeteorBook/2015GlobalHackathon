@@ -3,7 +3,8 @@
 /* VARIABLES */
 $fontStack: "gibson", sans-serif;
 $primaryColor: #7d878a;
-$colorBlue: #389BFF;
+$colorGreen: #3FB23F;
+$colorBlue: #6CA5C6;
 $colorRed: #de4f4f;
 $colorWhite: #fff;
 $colorLightGray: #DFE1E3;
@@ -29,7 +30,7 @@ a, a:hover {
 }
 
 .navbar-default {
-  background-color: #31E14E;
+  background-color: $colorGreen;
   min-height: 80px;
 }
 
@@ -38,7 +39,7 @@ a, a:hover {
 }
 
 .navbar-default .navbar-brand:hover {
-  color: $colorBlue;
+  color: $colorWhite;
 }
 
 .navbar-header {
@@ -79,6 +80,7 @@ footer {
 
 span.red {
   color: $colorRed;
+  font-weight: 600;
 }
 /* End FOOTER */
 
@@ -96,7 +98,15 @@ label {
 
 /* CREATE page */
 .invoice-background {
-  
+
+}
+
+.create-invoice-div {
+  margin-right: 1px solid red;
+}
+
+.view-invoice-div {
+
 }
 
 .invoice-body {
