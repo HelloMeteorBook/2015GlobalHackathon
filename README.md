@@ -8,7 +8,7 @@ Or try the 90-second demo video: <https://youtube.com>
 
 ## Features
 
-* Built with [Meteor](https://www.meteor.com/)!
+* Built with [Meteor](https://www.meteor.com/)
 * Simple invoicing with [Stripe](https://stripe.com/)
 * Bill clients via a professional, custom email
 * Get notified when your client pays
