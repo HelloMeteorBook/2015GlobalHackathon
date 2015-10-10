@@ -1,2 +1,4 @@
-# 2015GlobalHackathon
-Hello Meteor's 2015 Global Meteor Hackathon App
+# Simple Invoice
+Simple invoicing powered by Stripe. A [Hello Meteor](http://hellometeor.com/) project.
+
+http://simpleinvoice.meteor.com
