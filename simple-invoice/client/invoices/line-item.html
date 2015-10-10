@@ -1,0 +1,19 @@
+<template name="lineItem">
+  <div class='row'>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name='item-description' placeholder="Description">
+      <div class="help-block">Item Description</div>
+    </div>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" name='item-quantity' placeholder="0">
+      <div class="help-block">Quantity</div>
+    </div>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" name='item-price' placeholder="10">
+      <div class="help-block">Price per item</div>
+    </div>
+    <div class="col-sm-2">
+      <p class="form-control-static">{{lineItemPrice}}</p>
+    </div>
+  </div>
+</template>
