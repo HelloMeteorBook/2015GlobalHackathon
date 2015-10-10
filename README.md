@@ -19,3 +19,5 @@ Or try the 90-second demo video: <https://youtube.com>
 * [fortawesome:fontawesome](https://atmospherejs.com/fortawesome/fontawesome)
 * [twbs:bootstrap](https://atmospherejs.com/twbs/bootstrap)
 * [mrgalaxy:stripe](https://atmospherejs.com/mrgalaxy/stripe)
+* [fourseven:scss](https://atmospherejs.com/fourseven/scss)
+* [reywood:bootstrap3-sass](https://atmospherejs.com/reywood/bootstrap3-sass)
