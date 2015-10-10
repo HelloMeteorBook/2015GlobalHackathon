@@ -1,6 +1,6 @@
 body {
-  font-family: "Museo Sans", sans-serif;
   color: #464c3e;
+  font-family: "Museo Sans", sans-serif;
 }
 
 .navbar-max-width {
@@ -8,14 +8,13 @@ body {
 }
 
 .navbar-brand {
-  font-size: 3em;
-  /*font-family: "mauritius";*/
   font-family: "paganini-open", serif;
+  font-size: 3em;
 }
 
 .navbar-default {
-  min-height: 80px;
   background-color: #31E14E;
+  min-height: 80px;
 }
 
 .navbar-default .navbar-brand {
@@ -43,10 +42,8 @@ body {
 }
 
 .invoice-body {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  margin-bottom: 30px;
-  margin-top: 40px;
+  background-color: #fff;
+  margin: 40px auto 30px auto;
   max-width: 720px;
+  padding: 15px;
 }
