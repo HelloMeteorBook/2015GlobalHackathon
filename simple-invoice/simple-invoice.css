@@ -4,6 +4,14 @@ body {
   font-size: 18px;
 }
 
+a {
+  color: #389BFF;
+}
+
+a:hover {
+  color: #389BFF;
+}
+
 .navbar-max-width {
   max-width: 750px;
 }
@@ -11,6 +19,10 @@ body {
 .navbar-brand {
   font-family: "paganini-open", serif;
   font-size: 3em;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #389BFF;
 }
 
 .navbar-default {
@@ -36,6 +48,10 @@ body {
 
 .fa {
   color: #fff;
+}
+
+.fa:hover {
+  color: #389BFF;
 }
 
 .invoice-background {
