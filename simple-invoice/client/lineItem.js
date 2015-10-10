@@ -1,5 +1,6 @@
 Template.lineItem.onCreated(function() {
   // create line item price and quantity
+  
 });
 
 Template.lineItem.helpers({ 

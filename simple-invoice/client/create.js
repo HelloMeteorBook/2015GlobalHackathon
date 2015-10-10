@@ -3,6 +3,14 @@ Template.create.onCreated(function() {
   LineItems.insert({});
 });
 
+Template.create.onRendered(function() {
+  $('.date-picker').datepicker({
+    todayBtn: "linked",
+    todayHighlight: true
+  });
+  $('[name=due-date]').attr('placeholder', moment(Date.now()).add(1, 'week').format('MM/DD/YYYY'));
+});
+
 Template.create.helpers({ 
   lineItems: function() {
     return LineItems.find({});
