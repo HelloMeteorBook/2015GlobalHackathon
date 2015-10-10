@@ -1,7 +1,7 @@
 @import '{reywood:bootstrap3-sass}/bootstrap';
 
 /* VARIABLES */
-$fontStack: "Equity", sans-serif;
+$fontStack: "Concourse_T4", sans-serif;
 $primaryColor: #7d878a;
 $colorBlack: #3c4043;
 $colorGreen: #3FB23F;
@@ -26,8 +26,9 @@ a, a:hover {
 }
 
 .navbar-brand {
-  font-family: "paganini-open", serif;
+  font-family: "Equity", serif;
   font-size: 3em;
+  font-weight: 600;
 }
 
 .navbar-default {
@@ -106,10 +107,6 @@ label {
 
 }
 
-p.italic {
-  font-style: italic;
-}
-
 .create-invoice-div {
   padding: 0px 30px 15px 0px;
   margin: 40px auto 60px auto;
@@ -141,11 +138,39 @@ p.italic {
 }
 
 .about-body {
+  font-family: "Concourse_T3", sans-serif;
   color: $colorBlack;
-  margin: 40px 0px 60px 0px;
+  margin: 30px 0px 60px 0px;
   padding: 15px;
   border-radius: 10px;
-  max-width: 720px;
+  max-width: 960px;
+}
+
+.h1-about {
+  font-family: "Concourse_T7", sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.about-body p {
+  font-family: "Concourse_T2", sans-serif;
+  font-size: 1.5em;
+}
+
+.about-body p.about-italic {
+  font-style: italic;
+  margin-top: 30px;
+  font-family: "Concourse_T4", sans-serif;
+}
+
+.about-body p.about-contact {
+  font-family: "Concourse_C3", sans-serif;
+  margin-top: 30px;
+}
+
+ul {
+  font-size: 1.5em;
+  font-family: "Concourse_T2", sans-serif;
 }
 
 /* 404 PAGE */
@@ -172,12 +197,11 @@ p.italic {
   font-size: .75em;
 }
 
-<<<<<<< Updated upstream
 .remove-line-item {
   position: absolute;
   color: red;
   cursor: pointer;
-=======
+}
 
 @font-face {
   font-family: 'Equity';
@@ -205,5 +229,88 @@ p.italic {
   src: url('fonts/equity_text_b_regular-webfont.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
->>>>>>> Stashed changes
+}
+
+@font-face {
+  font-family: 'Concourse_T2';
+  src: url('fonts/concourse_t2_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_T2';
+  src: url('fonts/concourse_t2_bold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_C3';
+  src: url('fonts/concourse_c3_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_T3';
+  src: url('fonts/concourse_t3_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_T3';
+  src: url('fonts/concourse_t3_italic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Concourse_T3';
+  src: url('fonts/concourse_t3_bold_italic-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Concourse_T3';
+  src: url('fonts/concourse_t3_bold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_T4';
+  src: url('fonts/concourse_t4_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_T4';
+  src: url('fonts/concourse_t4_italic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Concourse_T4';
+  src: url('fonts/concourse_t4_bold_italic-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Concourse_T4';
+  src: url('fonts/concourse_t4_bold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Concourse_T7';
+  src: url('fonts/concourse_t7_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
 }
