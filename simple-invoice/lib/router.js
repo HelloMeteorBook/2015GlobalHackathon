@@ -7,11 +7,11 @@ Router.configure({
 // STATIC pages
 Router.route('/', {
   name: 'home',
-  fastRender: true
+  //fastRender: true
 });
 
 // STATIC pages
 Router.route('/about', {
   name: 'aboutPage',
-  fastRender: true
+  //fastRender: true
 });
