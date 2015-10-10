@@ -1,6 +1,12 @@
+Template.create.onCreated(function() {
+  LineItems = new Meteor.Collection(null);
+  LineItems.insert({});
+});
 
 Template.create.helpers({ 
-  
+  lineItems: function() {
+    return LineItems.find({});
+  }
 }); 
 
 Template.create.events({ 
