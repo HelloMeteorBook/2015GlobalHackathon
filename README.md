@@ -1,4 +1,3 @@
-# Simple Invoice
-Simple invoicing powered by Stripe. A [Hello Meteor](http://hellometeor.com/) project.
+# Simple Invoice: Stripe-powered invoicing with Meteor
 
-http://simpleinvoice.meteor.com
+[https://simpleinvoice.meteor.com](https://simpleinvoice.meteor.com) A [Hello Meteor](http://hellometeor.com/) project.
