@@ -1,6 +1,7 @@
 body {
   color: #464c3e;
   font-family: "Museo Sans", sans-serif;
+  font-size: 18px;
 }
 
 .navbar-max-width {
@@ -43,7 +44,8 @@ body {
 
 .invoice-body {
   background-color: #fff;
-  margin: 40px auto 30px auto;
+  margin: 40px auto 60px auto;
   max-width: 720px;
   padding: 15px;
+  border-radius: 10px;
 }
