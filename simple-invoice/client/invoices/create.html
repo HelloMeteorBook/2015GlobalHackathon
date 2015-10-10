@@ -9,21 +9,31 @@
       </div>
     </div>
     <div class="form-group">
-      <label for="company-name">Company Name</label>
-      <input type="text" class="form-control" name="company-name" placeholder="Please enter your company name" required>
+      <label for="company-name">Your Company Name</label>
+      <input type="text" class="form-control" name="company-name" placeholder="ex. HelloMeteor Web Consultancy" required>
     </div>
-    <div class="form-group">
-      <label for="client-name">Client Name</label>
-      <input type="text" class="form-control" name="client-name" placeholder="Please enter your client's name" required>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-group">
+          <label for="client-name">Client Name</label>
+          <input type="text" class="form-control" name="client-name" placeholder="ex. Meteor Dev Group " required>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-group">
+          <label for="client-email">Client Email</label>
+          <input type="email" class="form-control" name="client-email" placeholder="ex. debergalis@meteor.com" required>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="client-email">Client Email</label>
-      <input type="email" class="form-control" name="client-email" placeholder="Please enter your client's email address" required>
-    </div>
+
     <div class="form-group">
       <label for="project-description">Project Description</label>
-      <textarea class="form-control" name="project-description" placeholder="A description of the project" required></textarea>
+      <textarea class="form-control" name="project-description" placeholder="ex. Thanks for building Meteor. Check out this easy way to get paid. Maybe send it to all developers who've downloaded Meteor?" required></textarea>
     </div>
+
     <div class="form-group">
       <label for="due-date">Due Date</label>
       <div class="input-group date date-picker">
