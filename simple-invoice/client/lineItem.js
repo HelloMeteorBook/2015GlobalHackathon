@@ -2,6 +2,7 @@ Template.lineItem.onCreated(function() {
   // create line item price and quantity
   this.price = new ReactiveVar(0);
   this.quantity = new ReactiveVar(0);
+  this.newFieldCreated = new ReactiveVar(false);
 });
 
 Template.lineItem.helpers({ 
@@ -14,6 +15,9 @@ Template.lineItem.helpers({
       display = '$0'
     }
     return display;
+  },
+  moreThanOneLineItem:function() {
+    return LineItems.find({}).count() > 1;
   }
 }); 
 
@@ -24,5 +28,13 @@ Template.lineItem.events({
   },
   "keyup [name=item-quantity]": function(event, template){ 
     template.quantity.set(event.target.value);
+  },
+  "keyup input": function(event, template) {
+    if(!template.newFieldCreated.get() && _.isEmpty(_.filter(template.findAll($('input')), function(field) {
+      return !field.value;
+    }))) {
+      template.newFieldCreated.set(true);
+      LineItems.insert({});
+    }
   }
 }); 

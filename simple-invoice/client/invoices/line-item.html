@@ -1,11 +1,14 @@
 <template name="lineItem">
+  {{#if moreThanOneLineItem}}
+    <div class='remove-line-item'>SOME ELEMENT TO REMOVE A LINE ITEM</div>
+  {{/if}}
   <div class='row'>
     <div class="col-sm-6">
       <input type="text" class="form-control" name='item-description' placeholder="Description">
       <div class="help-block">Item Description</div>
     </div>
     <div class="col-sm-2">
-      <input type="text" class="form-control" name='item-quantity' placeholder="0">
+      <input type="number" class="form-control" name='item-quantity' placeholder="0">
       <div class="help-block">Quantity</div>
     </div>
     <div class="col-sm-2">
