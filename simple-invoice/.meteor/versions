@@ -1,3 +1,4 @@
+accounts-base@1.2.1
 autoupdate@1.2.3
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
@@ -11,9 +12,11 @@ caching-compiler@1.0.0
 caching-html-compiler@1.0.2
 callback-hook@1.0.4
 check@1.0.6
+chuangbo:cookie@1.1.0
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.1
+ddp-rate-limiter@1.0.0
 ddp-server@1.2.1
 deps@1.0.9
 diff-sequence@1.0.1
@@ -41,9 +44,13 @@ iron:url@1.0.11
 jquery@1.11.4
 launch-screen@1.0.4
 livedata@1.0.15
+localstorage@1.0.5
 logging@1.0.8
 meteor@1.1.9
 meteor-base@1.0.1
+meteorhacks:fast-render@2.10.0
+meteorhacks:inject-data@1.4.1
+meteorhacks:picker@1.0.3
 minifiers@1.1.7
 minimongo@1.0.10
 mobile-experience@1.0.1
@@ -55,6 +62,7 @@ observe-sequence@1.0.7
 ordered-dict@1.0.4
 promise@0.5.0
 random@1.0.4
+rate-limit@1.0.0
 reactive-dict@1.1.2
 reactive-var@1.0.6
 reload@1.1.4
@@ -62,6 +70,7 @@ retry@1.0.4
 reywood:bootstrap3-sass@3.3.5_2
 routepolicy@1.0.6
 sacha:spin@2.3.1
+service-configuration@1.0.5
 session@1.1.1
 spacebars@1.0.7
 spacebars-compiler@1.0.7

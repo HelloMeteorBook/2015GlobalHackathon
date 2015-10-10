@@ -12,8 +12,15 @@ Router.route('/about', {
   name: 'about'
 });
 
-Router.route(':id/success', {
-  name: 'success'
+Router.route('/invoices/:invoiceId/success', {
+  name: 'success',
+  waitOn: function() {
+    return Meteor.subscribe('singleInvoice', this.params.invoiceId);
+  },
+  data: function() {
+    return {invoice: Invoices.findOne(this.params.invoiceId)};
+  },
+  fastRender: true
 })
 
 Router.route(':id/pay', {

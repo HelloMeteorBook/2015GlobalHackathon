@@ -21,3 +21,4 @@ iron:router
 fourseven:scss
 reywood:bootstrap3-sass
 sacha:spin
+meteorhacks:fast-render
