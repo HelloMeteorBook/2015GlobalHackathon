@@ -1,6 +1,6 @@
 <template name="create">
   <h1>Create an Invoice</h1>
-  <form id="invoice-create" class="form-horizontal">
+  <form id="invoice-create" class="form-horizontal" data-parsley-validate>
     <div class="form-group">
       <label for="company-name">Company Name</label>
       <input type="text" class="form-control" name="company-name" placeholder="Please enter your company name" required>
@@ -20,7 +20,7 @@
     <div class="form-group">
       <label for="due-date">Due Date</label>
       <div class="input-group date date-picker">
-        <input type="text" class="form-control" name="due-date">
+        <input type="text" class="form-control" name="due-date" required>
         <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
       </div>
     </div>
@@ -30,5 +30,6 @@
         {{> lineItem}}
       {{/each}}
     </div>
+    <button type="submit" class="btn btn-success">Submit</button>
   </form>
 </template>

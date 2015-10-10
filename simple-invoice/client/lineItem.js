@@ -17,7 +17,9 @@ Template.lineItem.helpers({
     return display;
   },
   moreThanOneLineItem:function() {
-    return LineItems.find({}).count() > 1;
+    return LineItems.find({}).count() > 1 && (_.isEmpty(_.filter(Template.instance().findAll($('input')), function(field) {
+      return !field.value;
+    })));
   }
 }); 
 

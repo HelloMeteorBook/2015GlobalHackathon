@@ -4,11 +4,21 @@ Template.create.onCreated(function() {
 });
 
 Template.create.onRendered(function() {
+  //Plugin Activation
   $('.date-picker').datepicker({
     todayBtn: "linked",
     todayHighlight: true
   });
   $('[name=due-date]').attr('placeholder', moment(Date.now()).add(1, 'week').format('MM/DD/YYYY'));
+  $('form').parsley({
+    trigger: 'change',
+    errorClass: 'has-error',
+    successClass: 'has-success',
+    classHandler: function (ParsleyField) {
+      return ParsleyField.$element.parents('.form-group');
+    },
+    errorsWrapper: '<div class="help-block with-errors"></div>'
+  });
 });
 
 Template.create.helpers({ 
@@ -23,5 +33,8 @@ Template.create.events({
   },
   "changeDate .date-picker": function(event, template) {
     Session.set('form_due-date', event.date);
+  },
+  'submit form': function(event, template) {
+    event.preventDefault();
   }
 }); 
