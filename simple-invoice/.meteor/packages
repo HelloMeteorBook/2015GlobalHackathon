@@ -20,3 +20,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 fortawesome:fontawesome
 twbs:bootstrap
 iron:router
+reywood:bootstrap3-sass
