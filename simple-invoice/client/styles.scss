@@ -1,7 +1,7 @@
 @import '{reywood:bootstrap3-sass}/bootstrap';
 
 /* VARIABLES */
-$fontStack: "gibson", sans-serif;
+$fontStack: "Equity", sans-serif;
 $primaryColor: #7d878a;
 $colorBlack: #3c4043;
 $colorGreen: #3FB23F;
@@ -172,8 +172,38 @@ p.italic {
   font-size: .75em;
 }
 
+<<<<<<< Updated upstream
 .remove-line-item {
   position: absolute;
   color: red;
   cursor: pointer;
+=======
+
+@font-face {
+  font-family: 'Equity';
+  src: url('fonts/equity_text_b_bold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Equity';
+  src: url('fonts/equity_text_b_bold-italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Equity';
+  src: url('fonts/equity_text_b_italic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Equity';
+  src: url('fonts/equity_text_b_regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+>>>>>>> Stashed changes
 }
