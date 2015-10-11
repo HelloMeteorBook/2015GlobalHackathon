@@ -33,3 +33,4 @@ ejson
 http
 mrgalaxy:stripe
 email
+force-ssl
