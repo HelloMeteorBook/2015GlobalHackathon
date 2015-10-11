@@ -23,6 +23,6 @@ Router.route('/invoices/:invoiceId/success', {
   fastRender: true
 })
 
-Router.route(':id/pay', {
+Router.route('invoices/:invoiceId/pay', {
   name: 'pay'
 })
