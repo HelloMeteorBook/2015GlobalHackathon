@@ -153,12 +153,10 @@ label {
   margin-top: 30px;
 }
 
-.invoice-date {
-  margin-top: 10px;
-}
-
 .invoice-pay-button {
   margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .client-name-spacing {
@@ -167,6 +165,39 @@ label {
 
 .client-email-spacing {
   margin-right: -15px;
+}
+
+.invoice-company {
+  margin-bottom: 30px;
+}
+
+.invoice-label {
+  font-family: "Concourse_C4", sans-serif;
+  color: $primaryColor;
+}
+
+.invoice-total-label {
+  font-family: "Concourse_C4", sans-serif;
+  color: $colorBlack;
+  font-size: 1.2em;
+  margin-top: 50px;
+}
+
+.invoice-total-variable {
+  margin-bottom: 30px;
+  color: $colorBlack;
+  font-family: "Concourse_T7", sans-serif;
+  font-size: 1.5em;
+}
+
+th {
+  color: $primaryColor;
+  font-family: "Concourse_C4", sans-serif;
+  font-weight: 200;
+}
+
+.invoice-variable {
+  margin-bottom: 30px;
 }
 
 .pay-button {
@@ -184,6 +215,7 @@ label {
 .view-invoice {
   border: 2px solid $colorLightGray;
   border-radius: 10px;
+  font-family: "Concourse_T2", sans-serif;
   padding: 0px 15px 15px 15px;
   margin-top: 30px;
   min-height: 700px;
@@ -192,8 +224,10 @@ label {
 
 .invoice-body {
   background-color: $colorWhite;
-
+  font-size: 1.25em;
   border-radius: 10px;
+  min-height: 920px;
+  padding: 15px 15px 30px 15px;
 }
 
 .about-body {
