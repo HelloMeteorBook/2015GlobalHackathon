@@ -24,6 +24,6 @@ Or try the 90-second demo video: <https://youtube.com>
 
 ## Fonts Used
 This site uses [Equity](http://practicaltypography.com/equity.html) and
-[Concourse](http://practicaltypography.com/concourse.html), both by Matthew Butterick.
+[Concourse](http://practicaltypography.com/concourse.html), both by [Matthew Butterick](http://typographyforlawyers.com/about.html).
 
 These fonts are **NOT** open source and are therefore blocked from this repo via the .gitignore file.
