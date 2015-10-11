@@ -8,7 +8,7 @@ Meteor.methods({
     
     var invoice = Invoices.findOne({_id: invoiceId});
     
-    var text = "You have a new invoice from " + invoice.companyName + "\nInvoice #" + invoice.invoiceNumber + " for " + invoice.projectDescription + "\nView Invoice: https://simpleinvoice.meteor.com/invoices/" + invoiceId + "/pay\nSent by Simple Invoice (https://simpleinvoice.meteor.com/).";
+    var text = "You have a new invoice from " + invoice.companyName + "\nInvoice #" + invoice.invoiceNumber + " for " + invoice.projectDescription + "\nView Invoice: https://simpleinvoice.meteor.com/invoices/" + invoiceId + "/pay\n\nSent by Simple Invoice (https://simpleinvoice.meteor.com/).";
     
     Email.send({
       to: invoice.clientEmail,
