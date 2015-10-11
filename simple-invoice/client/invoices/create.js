@@ -31,6 +31,7 @@ Template.create.helpers({
       if(doc.price && doc.quantity)
         total += doc.price * doc.quantity;
     });
+    LocalInvoices.update(this._id, {$set: {'totalPrice': total}});
     return accounting.formatMoney(total);
   }
 });
@@ -44,12 +45,10 @@ Template.create.events({
     LocalInvoices.update(this._id, {
       $set: set
     });
-    // Session.set('form_' + event.target.name, event.target.value);
   },
   "changeDate .date-picker": function(event, template) {
     var date = event.date;
     LocalInvoices.update(this._id, {$set: {'dueDate': date}})
-    // Session.set('form_dueDate', event.date);
   },
   'submit form': function(event, template) {
     event.preventDefault();

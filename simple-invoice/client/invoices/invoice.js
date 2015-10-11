@@ -22,7 +22,14 @@ Template.invoice.helpers({
     return this.invoiceNumber || '';
   },
   lineItems: function() {
-    return LineItems.find({});
+    if(this.isPersistedCollection) {
+      // do something
+    } else {
+      return LineItems.find({});
+    }
+  },
+  totalPrice: function() {
+    return this.totalPrice || 0;
   }
 }); 
 
