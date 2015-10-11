@@ -21,6 +21,12 @@ Or try the 90-second demo video: <https://youtube.com>
 * [mrgalaxy:stripe](https://atmospherejs.com/mrgalaxy/stripe)
 * [fourseven:scss](https://atmospherejs.com/fourseven/scss)
 * [reywood:bootstrap3-sass](https://atmospherejs.com/reywood/bootstrap3-sass)
+* [almogdesign:parsley](https://atmospherejs.com/almogdesign/parsley)
+* [meteorhacks:fast-render](https://atmospherejs.com/meteorhacks/fast-render)
+* [momentjs:moment](https://atmospherejs.com/momentjs/moment)
+* [rajit:bootstrap3-datepicker](https://atmospherejs.com/rajit/bootstrap3-datepicker)
+* [risul:accounting](https://atmospherejs.com/risul/accounting)
+* [sacha:spin](https://atmospherejs.com/sacha/spin)
 
 ## Fonts Used
 This site uses [Equity](http://practicaltypography.com/equity.html) and
