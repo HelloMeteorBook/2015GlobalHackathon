@@ -4,7 +4,7 @@ Simple Invoice is an easy way to invoice clients with your Stripe account, built
 
 To get started, check out <https://simpleinvoice.meteor.com>
 
-Or try the 90-second demo video: <https://youtube.com>
+Or try the 90-second demo video: <https://vimeo.com/142035079>
 
 ## Features
 
