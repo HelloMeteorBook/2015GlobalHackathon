@@ -12,6 +12,28 @@ Router.route('/about', {
   name: 'about'
 });
 
+Router.route('/stripe/callback', function () {
+  var req = this.request;
+  var res = this.response;
+  
+  var stripeAuth = this.params.query.code;
+  var invoiceId = this.params.query.state;
+  
+  Meteor.call("getStripeInfo", stripeAuth, invoiceId, function(error, result){ 
+    if(error){ 
+      console.log("error", error); 
+      res.end();
+    } 
+    if(result){ 
+      res.writeHead(302, {
+        'Location': '/invoices/' + invoiceId + '/success'
+      });
+
+      res.end();
+    } 
+  });
+}, {where: 'server'});
+
 Router.route('/invoices/:invoiceId/success', {
   name: 'success',
   waitOn: function() {
@@ -25,4 +47,4 @@ Router.route('/invoices/:invoiceId/success', {
 
 Router.route('invoices/:invoiceId/pay', {
   name: 'pay'
-})
+});
