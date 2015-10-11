@@ -12,6 +12,10 @@ Router.route('/about', {
   name: 'about'
 });
 
+Router.route('/billing-email', {
+  name: 'billingEmail'
+});
+
 Router.route('/invoices/:invoiceId/success', {
   name: 'success',
   waitOn: function() {
