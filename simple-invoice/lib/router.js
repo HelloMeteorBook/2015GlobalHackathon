@@ -29,6 +29,7 @@ Router.route('/stripe/callback', function () {
       res.end();
     }
     if(result){
+      Meteor.call('sendEmail', invoiceId);
       res.writeHead(302, {
         'Location': '/invoices/' + invoiceId + '/success'
       });

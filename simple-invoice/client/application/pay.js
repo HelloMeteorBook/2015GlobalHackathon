@@ -8,6 +8,9 @@ Template.pay.onCreated(function(){
         Meteor.call('payInvoice', {invoice: invoice, stripeToken: stripeToken, customerEmail: customerEmail}, function(error, result) {
           if (error) {
             console.log("Error submitting form: ", error);
+            alert('There was an issue with your payment. You may try again.');
+            button.attr('disabled', false);
+            button.text('Pay');
           } else {
             console.log('Paid');
           }
@@ -43,8 +46,6 @@ Template.pay.events({
         panelLabel: 'Pay Now',
         allowRememberMe: false,
         closed: function() {
-          button.attr('disabled', false);
-          button.text('Pay');
         }
       }
     )

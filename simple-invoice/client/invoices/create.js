@@ -53,6 +53,11 @@ Template.create.events({
   'submit form': function(event, template) {
     event.preventDefault();
     
+    if(this.totalPrice < 2) {
+      alert("The total price must be greater than $2");
+      return;
+    }
+    
     var invoiceData = _.omit(this, '_id');
     
     var lineItems = _.filter(LineItems.find().fetch(), function(item) {return item.description && item.quantity && item.price})
