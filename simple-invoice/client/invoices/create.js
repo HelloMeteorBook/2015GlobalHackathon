@@ -67,6 +67,8 @@ Template.create.events({
       } 
       if(result){ 
          console.log(result);
+         var state = result.invoiceId;
+         window.open("https://connect.stripe.com/oauth/authorize?response_type=code&client_id="+ Meteor.settings.public.stripeClientId+"&scope=read_write&state="+ state +"","_self");
       } 
     });
   }
