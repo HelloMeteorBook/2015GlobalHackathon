@@ -12,7 +12,7 @@ Meteor.methods({
     
     Email.send({
       to: invoice.clientEmail,
-      from: 'hello@hellometeor.com',
+      from: "SimpleInvoice <hello@hellometeor.com>",
       subject: 'You have an invoice from ' + invoice.companyName,
       text: text
     });
