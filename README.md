@@ -31,6 +31,7 @@ Or try the 90-second demo video: <https://youtube.com>
 * [ejson](https://atmospherejs.com/meteor/ejson)
 * [http](https://atmospherejs.com/meteor/http)
 * [mrgalaxy:stripe](https://atmospherejs.com/mrgalaxy/stripe)
+* [email](https://atmospherejs.com/meteor/email)
 
 ## Fonts Used
 This site uses [Equity](http://practicaltypography.com/equity.html) and
