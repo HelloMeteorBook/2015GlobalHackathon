@@ -15,18 +15,22 @@ Or try the 90-second demo video: <https://youtube.com>
 * Simple pricing: $1 per successful client billing transaction plus Stripe’s addition  [processing fee](https://stripe.com/us/pricing)
 
 ## Meteor Packages Used
-* [iron:router](https://atmospherejs.com/iron/router)
 * [fortawesome:fontawesome](https://atmospherejs.com/fortawesome/fontawesome)
-* [twbs:bootstrap](https://atmospherejs.com/twbs/bootstrap)
-* [mrgalaxy:stripe](https://atmospherejs.com/mrgalaxy/stripe)
+* [iron:router](https://atmospherejs.com/iron/router)
 * [fourseven:scss](https://atmospherejs.com/fourseven/scss)
 * [reywood:bootstrap3-sass](https://atmospherejs.com/reywood/bootstrap3-sass)
-* [almogdesign:parsley](https://atmospherejs.com/almogdesign/parsley)
-* [meteorhacks:fast-render](https://atmospherejs.com/meteorhacks/fast-render)
-* [momentjs:moment](https://atmospherejs.com/momentjs/moment)
-* [rajit:bootstrap3-datepicker](https://atmospherejs.com/rajit/bootstrap3-datepicker)
-* [risul:accounting](https://atmospherejs.com/risul/accounting)
 * [sacha:spin](https://atmospherejs.com/sacha/spin)
+* [meteorhacks:fast-render](https://atmospherejs.com/meteorhacks/fast-render)
+* [rajit:bootstrap3-datepicker](https://atmospherejs.com/rajit/bootstrap3-datepicker)
+* [momentjs:moment](https://atmospherejs.com/momentjs/moment)
+* [reactive-var](https://atmospherejs.com/meteor/reactive-var)
+* [almogdesign:parsley](https://atmospherejs.com/almogdesign/parsley)
+* [risul:accounting](https://atmospherejs.com/risul/accounting)
+* [audit-argument-checks](https://atmospherejs.com/meteor/audit-argument-checks)
+* [check](https://atmospherejs.com/meteor/check)
+* [ejson](https://atmospherejs.com/meteor/ejson)
+* [http](https://atmospherejs.com/meteor/http)
+* [mrgalaxy:stripe](https://atmospherejs.com/mrgalaxy/stripe)
 
 ## Fonts Used
 This site uses [Equity](http://practicaltypography.com/equity.html) and
