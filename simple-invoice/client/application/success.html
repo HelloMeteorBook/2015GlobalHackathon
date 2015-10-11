@@ -2,9 +2,9 @@
   {{#with invoice}}
     <div class="success-body">
       <h1>Invoice #{{invoiceNumber}} is complete!</h1>
-      <p class="success-email-text">It has been sent to your {{clientName}} at: {{clientEmail}}</p>
+      <p class="success-email-text">It has been sent to {{clientName}} at: {{clientEmail}}</p>
       <p class="copy-link-p">Copy link:
-        <button type="submit" href="https://simpleinvoice.meteor.com/" class="btn btn-default btn-copy-link">{{shareableUrl}}</button>
+        <button class="btn btn-default btn-copy-link" data-clipboard-text="{{shareableUrl}}" >{{shareableUrl}}</button>
       </p>
     </div>
   {{/with}}
