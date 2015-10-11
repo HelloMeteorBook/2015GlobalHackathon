@@ -1,3 +1,16 @@
 <template name="pay">
-  Pay page
+  <div class='row'>
+    <div class='col-sm-offset-3 col-sm-6'>
+      {{#with invoice}}
+        {{> invoice}}
+        <div class="invoice-pay-button">
+          {{#if isPaid}}
+            <button class="btn btn-success pay-button" disabled>&check; Paid</button>
+          {{else}}
+            <button type="submit" class="btn btn-success pay-button">pay now</button>
+          {{/if}}
+        </div>
+      {{/with}}
+    </div>
+  </div>
 </template>

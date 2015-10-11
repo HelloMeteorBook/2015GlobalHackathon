@@ -26,7 +26,7 @@ Template.invoice.helpers({
   },
   lineItems: function() {
     if(this.isPersistedCollection) {
-      // do something
+      return this.lineItems;
     } else {
       return LineItems.find({});
     }
