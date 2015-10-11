@@ -230,13 +230,44 @@ th {
   padding: 15px 15px 30px 15px;
 }
 
+.btn-copy-link {
+  margin-left: 15px;
+  min-width: 100px;
+  font-size: 1.2em;
+  color: $colorBlue;
+}
+
+.btn-copy-link:hover {
+  background-color: $colorBlue;
+  color: $colorWhite;
+}
+
+.success-email-text {
+  margin-top: 15px;
+}
+
+.copy-link-p {
+  margin-top: 30px;
+}
+
 .success-body {
-  font-family: "Concourse_T3", sans-serif;
+  font-family: "Concourse_T7", sans-serif;
   color: $colorBlack;
-  margin: 30px 0px 60px 0px;
-  padding: 15px;
+  margin: 60px auto;
+  padding: 30px;
   border-radius: 10px;
   max-width: 960px;
+  border: 1px solid $colorLightGray;
+  text-align: center;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.5em;
+    color: $primaryColor;
+    font-family: "Concourse_T4", sans-serif;
+  }
 }
 
 .about-body {
