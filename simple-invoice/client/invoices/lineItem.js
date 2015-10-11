@@ -20,13 +20,13 @@ Template.lineItem.helpers({
 
 Template.lineItem.events({ 
   // some event that adds the line item to a client side line item collection
-  "keyup [name=item-price]": function(event, template){ 
+  "keyup [name=itemPrice]": function(event, template){ 
     LineItems.update(this._id, {$set: {price: event.target.value}});
   },
-  "keyup [name=item-quantity]": function(event, template){ 
+  "keyup [name=itemQuantity]": function(event, template){ 
     LineItems.update(this._id, {$set: {quantity: event.target.value}});
   },
-  "keyup [name=item-description]": function(event, template) {
+  "keyup [name=itemDescription]": function(event, template) {
     LineItems.update(this._id, {$set: {description: event.target.value}});
   },
   "keyup input": function(event, template) {

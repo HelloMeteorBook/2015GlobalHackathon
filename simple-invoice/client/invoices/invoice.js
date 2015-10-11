@@ -1,25 +1,25 @@
 Template.invoice.helpers({ 
   companyName: function(){ 
-   return Session.get('form_company-name') || 'Your Company'
+    return this.companyName || 'Your Company'
   }, 
   clientName: function(){ 
-   return Session.get('form_client-name') || 'Client Name'
+   return this.clientName || 'Client Name'
   }, 
   projectDescription: function(){ 
-   return Session.get('form_project-description') || 'Project Description'
+   return this.projectDescription || 'Project Description'
   },
   dueDate: function() {
-    if(Session.get('form_due-date')) {
-      return moment(Session.get('form_due-date')).format('MM/DD/YYYY');
+    if(this.dueDate) {
+      return moment(this.dueDate).format('MM/DD/YYYY');
     } else {
       return 'Due Date'
     }
   },
   clientEmail: function() {
-    return Session.get('form_client-email') || 'Client Email';
+    return this.clientEmail || 'Client Email';
   },
   invoiceNumber: function() {
-    return Session.get('form_invoice-number') || '';
+    return this.invoiceNumber || '';
   },
   lineItems: function() {
     return LineItems.find({});

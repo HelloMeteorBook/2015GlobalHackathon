@@ -1,43 +1,41 @@
 <template name="create">
-  <form id="invoice-create" class="form-horizontal" data-parsley-validate>
+  <form id="invoiceCreate" class="form-horizontal" data-parsley-validate>
     <div class="form-group">
       <div class='row'>
-        <label for="invoice-number" class="col-sm-3">Invoice #</label>
+        <label for="invoiceNumber" class="col-sm-3">Invoice #</label>
         <div class="col-sm-9">
-          <input type="number" class="form-control" name="invoice-number" placeholder="1001" required>
+          <input type="number" class="form-control" name="invoiceNumber" placeholder="1001" required>
         </div>
       </div>
     </div>
     <div class="form-group">
-      <label for="company-name">Your Company Name</label>
-      <input type="text" class="form-control" name="company-name" placeholder="ex. HelloMeteor Web Consultancy" required>
+      <label for="companyName">Company Name</label>
+      <input type="text" class="form-control" name="companyName" placeholder="ex. HelloMeteor Web Consultancy" required>
     </div>
-
     <div class="row">
       <div class="col-xs-12 col-sm-6 client-name-spacing">
         <div class="form-group">
-          <label for="client-name">Client Name</label>
-          <input type="text" class="form-control" name="client-name" placeholder="ex. Meteor Dev Group " required>
+          <label for="clientName">Client Name</label>
+          <input type="text" class="form-control" name="clientName" placeholder="ex. Meteor Dev Group " required>
         </div>
       </div>
-
       <div class="col-xs-12 col-sm-6 client-email-spacing">
         <div class="form-group">
-          <label for="client-email">Client Email</label>
-          <input type="email" class="form-control" name="client-email" placeholder="ex. sayhi@meteor.com" required>
+          <label for="clientEmail">Client Email</label>
+          <input type="email" class="form-control" name="clientEmail" placeholder="ex. sayhi@meteor.com" required>
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label for="project-description">Project Description</label>
-      <textarea class="form-control" name="project-description" placeholder="ex. Building a slick invoice app in 24 hours with Meteor" required></textarea>
+      <label for="projectDescription">Project Description</label>
+      <textarea class="form-control" name="projectDescription" placeholder="ex. Building a slick invoice app in 24 hours with Meteor" required></textarea>
     </div>
 
     <div class="form-group">
-      <label for="due-date">Due Date</label>
+      <label for="dueDate">Due Date</label>
       <div class="input-group date date-picker">
-        <input type="text" class="form-control" name="due-date" required>
+        <input type="text" class="form-control" name="dueDate" required>
         <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
       </div>
     </div>
@@ -47,7 +45,7 @@
         {{> lineItem}}
       {{/each}}
       <div class="row">
-        <label for="total-price" class="control-label col-md-offset-6 col-sm-4">Total Price</label>
+        <label for="totalPrice" class="control-label col-md-offset-6 col-sm-4">Total Price</label>
         <div class="col-sm-2">
           <p class="form-control-static total-cost">{{totalPrice}}</p>
         </div>

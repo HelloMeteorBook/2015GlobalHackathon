@@ -9,7 +9,7 @@ Template.create.onRendered(function() {
     todayBtn: "linked",
     todayHighlight: true
   });
-  $('[name=due-date]').attr('placeholder', moment(Date.now()).add(1, 'week').format('MM/DD/YYYY'));
+  $('[name=dueDate]').attr('placeholder', moment(Date.now()).add(1, 'week').format('MM/DD/YYYY'));
   $('form').parsley({
     trigger: 'change',
     errorClass: 'has-error',
@@ -37,10 +37,19 @@ Template.create.helpers({
 
 Template.create.events({ 
   "keyup input, keyup textarea": function(event, template) {
-     Session.set('form_' + event.target.name, event.target.value);
+    var key = event.target.name;
+    var value = event.target.value;
+    var set = {};
+    set[key] = value;
+    LocalInvoices.update(this._id, {
+      $set: set
+    });
+    // Session.set('form_' + event.target.name, event.target.value);
   },
   "changeDate .date-picker": function(event, template) {
-    Session.set('form_due-date', event.date);
+    var date = event.date;
+    LocalInvoices.update(this._id, {$set: {'dueDate': date}})
+    // Session.set('form_dueDate', event.date);
   },
   'submit form': function(event, template) {
     event.preventDefault();
