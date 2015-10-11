@@ -37,12 +37,12 @@ a, a:hover {
   min-height: 80px;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, #simple-invoice-brand {
   color: white;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: $colorWhite;
+  
+  &:hover {
+    color: $colorWhite;
+  }
 }
 
 .navbar-header {
