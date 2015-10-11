@@ -21,3 +21,9 @@ Or try the 90-second demo video: <https://youtube.com>
 * [mrgalaxy:stripe](https://atmospherejs.com/mrgalaxy/stripe)
 * [fourseven:scss](https://atmospherejs.com/fourseven/scss)
 * [reywood:bootstrap3-sass](https://atmospherejs.com/reywood/bootstrap3-sass)
+
+## Fonts Used
+This site uses [Equity](http://practicaltypography.com/equity.html) and
+[Concourse](http://practicaltypography.com/concourse.html), both by Matthew Butterick.
+
+These fonts are **NOT** open source and are therefore blocked from this repo via the .gitignore file.
