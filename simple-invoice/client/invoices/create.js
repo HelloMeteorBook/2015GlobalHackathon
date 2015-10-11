@@ -52,5 +52,22 @@ Template.create.events({
   },
   'submit form': function(event, template) {
     event.preventDefault();
+    
+    var invoiceData = _.omit(this, '_id');
+    
+    var lineItems = _.filter(LineItems.find().fetch(), function(item) {return item.description && item.quantity && item.price})
+    
+    invoiceData = _.extend(invoiceData, {
+      lineItems: lineItems
+    })
+    
+    Meteor.call("createInvoice", invoiceData, function(error, result){ 
+      if(error){ 
+        console.log("error", error); 
+      } 
+      if(result){ 
+         console.log(result);
+      } 
+    });
   }
 }); 

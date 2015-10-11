@@ -2,6 +2,9 @@ Template.invoice.helpers({
   companyName: function(){ 
     return this.companyName || 'Your Company'
   }, 
+  createdDate: function() {
+    return moment(this.createdDate).format('MMM Do, YYYY') || moment().format('MMM Do, YYYY')
+  },
   clientName: function(){ 
    return this.clientName || 'Client Name'
   }, 

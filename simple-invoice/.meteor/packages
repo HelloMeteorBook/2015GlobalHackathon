@@ -27,3 +27,6 @@ momentjs:moment
 reactive-var
 almogdesign:parsley.js
 risul:accounting
+audit-argument-checks
+check
+ejson
