@@ -31,7 +31,7 @@ Template.pay.events({
   'click button[type="submit"]': function(event, template) {
     event.preventDefault();
 
-    var button = $(event.target).find('button[type="submit"]')
+    var button = $(event.target);
     button.prop('disabled', true);
     button.text('Paying')
     
